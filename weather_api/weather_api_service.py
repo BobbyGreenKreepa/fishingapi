@@ -36,3 +36,5 @@ def _openweather_response_parser(openweather_response: dict) -> Weather:
         return Weather(**openweather_response)
     except pydantic.error_wrappers.ValidationError:
         raise OpenWeatherApiServiceError
+
+#test
